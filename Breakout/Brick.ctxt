@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Brick
+comment0.text=\n\ A\ brick\ is\ a\ filled\ rectangle\ that\ doesn't\ do\n\ anything\ when\ it\ gets\ the\ act\ message.\n\ \n\ @author\ Barb\ Ericson,\ Georgia\ Tech\n\ @version\ 1.0,\ April\ 6,\ 2007\n
+comment1.params=theColor
+comment1.target=Brick(java.awt.Color)
+comment1.text=\n\ Constructor\ that\ takes\ the\ color\ for\ the\ brick\ \n\ @param\ theColor\ the\ color\ to\ use\ for\ this\ brick\n
+comment2.params=theWidth\ theHeight\ theColor
+comment2.target=Brick(int,\ int,\ java.awt.Color)
+comment2.text=\n\ Constructor\ that\ takes\ the\ width,\ height,\ and\ color\ for\ this\ \n\ brick.\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Method\ to\ act\ during\ a\ time\ step\ \n
+comment4.params=
+comment4.target=void\ updateImage()
+comment4.text=\n\ Method\ to\ create\ the\ image\ and\ set\ it\ for\ this\ brick.\n\ If\ you\ change\ the\ width,\ height,\ or\ color\ invoke\ this\n\ method.\n
+numComments=5
