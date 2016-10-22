@@ -50,6 +50,7 @@ public class Brick extends Actor
      */
     public void act()
     {
+       
     }
   
     /**

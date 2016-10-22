@@ -69,8 +69,7 @@ public class Ball extends Actor
      */
     public void act() 
     {   
-        move(-3);
-        turnTowards(velX, velY);
+        muevete();
     }
     
     /**
@@ -93,5 +92,21 @@ public class Ball extends Actor
         image.setColor(color);
         image.fillOval(0,0,width,width);
         setImage(image);
+    }
+    
+    public void muevete()
+    {
+        {
+            setLocation(getX() + velX, getY() + velY);
+            
+            if(getX()<radius||getX()>=BreakoutWorld.WIDTH-radius)
+            {
+                velX=-1*velX;
+            }
+            if(getY()<=radius||isTouching(Paddle.class))
+            {
+                velY=-1-velY;
+            }
+        }
     }
 }
