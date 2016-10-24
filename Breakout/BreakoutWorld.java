@@ -49,7 +49,6 @@ public class BreakoutWorld extends World
   
    /** a message displayed for the user */
    private Message message = null;
-
   
    //////////// constructors /////////////
   
@@ -58,7 +57,7 @@ public class BreakoutWorld extends World
     */
    public BreakoutWorld()
    {
-        super (WIDTH, HEIGHT, RESOLUTION,false);
+        super (WIDTH, HEIGHT, RESOLUTION,true);
         setUpBreakout();
    }
   
@@ -75,7 +74,7 @@ public class BreakoutWorld extends World
     */
    public void newBall() 
    {
-       /* increment the number of balls created */
+      /* increment the number of balls created */
       numBalls++;
       
       /* check if used 3 or more */

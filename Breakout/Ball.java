@@ -104,9 +104,18 @@ public class Ball extends Actor
             {
                 velX=-1*velX;
             }
+            
             if(getY()<=radius||isTouching(Paddle.class))
             {
                 velY=-1-velY;
+            }
+            
+            if(getY()<radius||getY()>=BreakoutWorld.HEIGHT-radius)
+            {
+              World mundo = getWorld();
+              getWorld().removeObject(this);
+              ((BreakoutWorld)mundo).newBall();
+              setLocation(getX() + velX, getY() + velY);
             }
         }
     }
@@ -122,5 +131,4 @@ public class Ball extends Actor
             velY=-1-velY;
         }
     }
-
 }
