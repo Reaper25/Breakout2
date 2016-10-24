@@ -110,7 +110,7 @@ public class Ball extends Actor
                 velY=-1*velY;
             }
             
-            if(getY()>=BreakoutWorld.HEIGHT-radius)
+            if(getY()<=radius||getY()>=BreakoutWorld.HEIGHT-radius)
             {
               World mundo = getWorld();
               getWorld().removeObject(this);
@@ -124,6 +124,7 @@ public class Ball extends Actor
         if(isTouching(Brick.class))
         {
             removeTouching(Brick.class);
+            velY=-1*velY;
         }
         if(getY()<=radius||isTouching(Brick.class))
         {
