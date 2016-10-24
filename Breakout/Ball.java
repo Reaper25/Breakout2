@@ -115,7 +115,6 @@ public class Ball extends Actor
               World mundo = getWorld();
               getWorld().removeObject(this);
               ((BreakoutWorld)mundo).newBall();
-              setLocation(getX() + velX, getY() + velY);
             }
         }
     }
