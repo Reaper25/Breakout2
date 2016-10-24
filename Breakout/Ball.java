@@ -107,10 +107,10 @@ public class Ball extends Actor
             
             if(getY()<=radius||isTouching(Paddle.class))
             {
-                velY=-1-velY;
+                velY=-1*velY;
             }
             
-            if(getY()<radius||getY()>=BreakoutWorld.HEIGHT-radius)
+            if(getY()>=BreakoutWorld.HEIGHT-radius)
             {
               World mundo = getWorld();
               getWorld().removeObject(this);
