@@ -122,5 +122,6 @@ public class Ball extends Actor
             velY=-1-velY;
         }
     }
-
+    
+    
 }

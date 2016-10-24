@@ -49,6 +49,7 @@ public class BreakoutWorld extends World
   
    /** a message displayed for the user */
    private Message message = null;
+
   
    //////////// constructors /////////////
   
