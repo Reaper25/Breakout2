@@ -126,9 +126,9 @@ public class Ball extends Actor
             removeTouching(Brick.class);
             velY=-1*velY;
         }
-        if(getY()<=radius||isTouching(Brick.class))
+        /*if(getY()<=radius||isTouching(Brick.class))
         {
             velY=-1-velY;
-        }
+        }*/
     }
 }
