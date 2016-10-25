@@ -116,6 +116,11 @@ public class Ball extends Actor
               getWorld().removeObject(this);
               ((BreakoutWorld)mundo).newBall();
             }
+            
+            if(getY()-radius<=radius)
+            {
+                velY=-1*velY;
+            }
         }
     }
     
